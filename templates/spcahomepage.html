@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!------->
+
+<div class='container-fluid bg-notif bg-dark'>
+<p style='text-align:center;' ><marquee> <p style="font-family: Impact; font-size: 10pt;color:black; " class='mt-3'><strong style='color:red;'><i class="fa fa-warning"></i> <span >Notifications !</span></strong> 
+{% for i in noti %}
+<span style='color:green;'>{{i.notifications}}</span>
+{% endfor %}
+</p></marquee></p>
+</div>
+
+<!----
+#upcoming_feauture_payment_integration
+ <p style='text-align:right;'>
+<button style='font-size:24px' class='btn-danger' >
+Contribution &nbsp&nbsp
+<i class='far fa-handshake'></i>
+</button>
+</p>
+ ---->
+<div class='container mt-5'>
+
+<div class="row">
+
+{% for i in homecrousel %}
+<div class="col gallerybox">
+<div class="card galleryshadow";>
+<img class="card-img-top h-100" src="{{i.homecover0.url}}" alt="Card image cap">
+<div class="card-body">
+<a href='{% url "rescuegallery" %}'>
+<p class="card-text">{{i.hometitle0}}</p></a>
+</div>
+</div>
+</div>
+
+
+<div class="col gallerybox">
+<div class="card galleryshadow";>
+<img class="card-img-top h-100" src="{{i.homecover1.url}}" alt="Card image cap">
+<div class="card-body">
+<a href='{% url "spcaevents" %}'><p class="card-text">{{i.hometitle1}}</p></a>
+</div>
+</div>
+</div>
+
+
+<div class="col gallerybox">
+<div class="card galleryshadow";>
+<img class="card-img-top h-100" src="{{i.homecover2.url}}" alt="Card image cap">
+<div class="card-body">
+<a href='{% url "animallaw" %}' >
+<p class="card-text">{{i.hometitle2}}</p></a>
+</div>
+</div>
+</div>
+
+{% endfor %}
+
+</div>
+</div>
+
+{% endblock content %}

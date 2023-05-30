@@ -1,0 +1,102 @@
+* {
+
+	font-weight:bold;
+}
+
+.bg-notif{
+
+	height:50px;
+}
+
+
+
+body {
+	
+	background-color:white;
+	height:100%;
+}
+
+.container-fluid {
+	margin:0px;
+	padding:0px;
+	
+}
+
+.spcafont:onhover {
+
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	
+}
+
+
+
+.brk {
+	overflow-wrap:break-word;
+	word-wrap    : break-word;
+	word-break:break-all;
+  	white-space: pre-wrap;
+}
+
+#special:hover {
+	
+	text-shadow:20px 0px 50px white;
+}
+
+.nav-link,nav-link active {
+
+	font-size:15pt;
+	color:black;
+}
+
+.mainbar {
+	   box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+img {
+	filter: drop-shadow(5px 0px 15px white);
+	width:120px;
+	height:120px;
+        }
+        
+.address {
+
+	font-size:10pt;
+	color:black;
+}
+
+.admins {
+
+	background-color:black;
+	height:130px;
+}
+
+.galleryshadow {
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.gallerybox {
+
+	  background: #fff;
+	  border-radius: 20px;
+	  transition: all ease 0.2s;
+}
+.galleryshadow:hover {
+   transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  }
+
+
+.hvr:hover {
+
+	box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+	
+}
+
+.bg-light-blue {
+
+	background-color:#629fd9;
+}
+
+.indianbg {
+	background-image:url('static/spcagallery/indianflag.jpg');
+}

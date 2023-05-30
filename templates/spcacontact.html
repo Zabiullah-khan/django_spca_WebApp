@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+<h2 class="text-center text-warning bg-dark">SPCA Contact Details
+&nbsp&nbsp&nbsp&nbsp
+<i class="fa fa-solid fa-phone  fa-rotate-90" style="color: #1c71d8;"></i>
+<a href=''>+919043016324</a>
+&nbsp&nbsp&nbsp&nbsp
+<i class="fa fa-solid fa-envelope" style="color: #1c71d8;"></i>
+<a href='https://accounts.google.com/v3/signin/identifier?dsh=S1494006383%3A1683349687743590&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=Af_xneGD5So7c3NjMHcWD1qDJSe5XsWVttoZCEhYg70Lb1XO2PyW0Ksc7ETgmb5XdZdGelov8_phUg&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin' target='_blank'>spcahsr@gmail.com</a>
+</h2>
+<div class="row justify-content-center">
+<div class="col-12 col-md-8 col-lg-6 pb-5 mt-5">
+
+
+<!--Form with header-->
+
+<form action="" method="POST" >
+{% csrf_token %}
+<div class="card border-primary rounded-0">
+<div class="card-header p-0">
+<div class="bg-primary text-white text-center py-2">
+<h3><i class="fa fa-envelope"></i> Contact Us</h3>
+<p class="m-0">Write your suggestions to us</p>
+</div>
+</div>
+<div class="card-body p-3">
+
+<!--Body-->
+<div class="form-group">
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<div class="input-group-text"><i class="fa fa-user text-primary"></i></div>
+</div>
+{{frm.fullname}}
+</div>
+</div>
+<div class="form-group">
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<div class="input-group-text"><i class="fa fa-envelope text-primary"></i></div>
+</div>
+{{frm.email}}
+</div>
+</div>
+
+<div class="form-group">
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<div class="input-group-text"><i class="fa fa-comment text-primary"></i></div>
+</div>
+{{frm.message}}
+</div>
+</div>
+
+<div class="text-center">
+<input type="submit" value="Submit Query" class="btn btn-primary btn-block rounded-0 py-2">
+</div>
+</div>
+
+</div>
+</form>
+<!--Form with header-->
+
+
+</div>
+</div>
+</div>
+{% endblock content %}
