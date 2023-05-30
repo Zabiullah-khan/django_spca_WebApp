@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block content  %}
+<!-- Page Content -->
+<div class="container">
+
+<h1 class="fw-light text-center text-lg-start mt-4 mb-0">{{eventjpg.title}} Gallery</h1>
+
+<hr class="mt-2 mb-5">
+
+
+<div class="row text-center text-lg-start">
+
+
+{% if eventjpg.image1 %}
+<div class="col-lg-3 col-md-4 col-6">
+<a href="{{eventjpg.image1.url}}" target='_blank' class="d-block mb-4 h-100">
+<img class="img-fluid img-thumbnail" src="{{eventjpg.image1.url}}" alt="">
+</a>
+</div>
+{% endif %}
+
+{% if eventjpg.image2 %}
+<div class="col-lg-3 col-md-4 col-6">
+<a href="{{eventjpg.image2.url}}" target='_blank' class="d-block mb-4 h-100">
+<img class="img-fluid img-thumbnail" src="{{eventjpg.image2.url}}" alt="">
+</a>
+</div>
+{% endif %}
+
+{% if eventjpg.image3 %}
+<div class="col-lg-3 col-md-4 col-6">
+<a href="{{eventjpg.image3.url}}" target='_blank' class="d-block mb-4 h-100">
+<img class="img-fluid img-thumbnail" src="{{eventjpg.image3.url}}" alt="">
+</a>
+</div>
+{% endif %}
+
+{% if eventjpg.image4 %}
+<div class="col-lg-3 col-md-4 col-6">
+<a href="{{eventjpg.image4.url}}" target='_blank' class="d-block mb-4 h-100">
+<img class="img-fluid img-thumbnail" src="{{eventjpg.image4.url}}" alt="">
+</a>
+</div>
+{% endif %}
+
+{% if eventjpg.image5 %}
+<div class="col-lg-3 col-md-4 col-6">
+<a href="{{eventjpg.image5.url}}" target='_blank' class="d-block mb-4 h-100">
+<img class="img-fluid img-thumbnail" src="{{eventjpg.image5.url}}" alt="">
+</a>
+</div>
+{% endif %}
+
+{% if eventjpg.image6 %}
+<div class="col-lg-3 col-md-4 col-6">
+<a href="{{eventjpg.image6.url}}" target='_blank' class="d-block mb-4 h-100">
+<img class="img-fluid img-thumbnail" src="{{eventjpg.image6.url}}" alt="">
+</a>
+</div>
+{% endif %}
+
+{% if eventjpg.image7 %}
+<div class="col-lg-3 col-md-4 col-6">
+<a href="{{eventjpg.image7.url}}" target='_blank' class="d-block mb-4 h-100">
+<img class="img-fluid img-thumbnail" src="{{eventjpg.image7.url}}" alt="">
+</a>
+</div>
+{% endif %}
+
+{% if eventjpg.image8 %}
+<div class="col-lg-3 col-md-4 col-6">
+<a href="{{eventjpg.image8.url}}" target='_blank' class="d-block mb-4 h-100">
+<img class="img-fluid img-thumbnail" src="{{eventjpg.image8.url}}" alt="">
+</a>
+</div>
+{% endif %}
+
+{% if eventjpg.image9 %}
+<div class="col-lg-3 col-md-4 col-6">
+<a href="{{eventjpg.image9.url}}" target='_blank' class="d-block mb-4 h-100">
+<img class="img-fluid img-thumbnail" src="{{eventjpg.image9.url}}" alt="">
+</a>
+</div>
+{% endif %}
+
+{% if eventjpg.image10 %}
+<div class="col-lg-3 col-md-4 col-6">
+<a href="{{eventjpg.image10.url}}" target='_blank' class="d-block mb-4 h-100">
+<img class="img-fluid img-thumbnail" src="{{eventjpg.image10.url}}" alt="">
+</a>
+</div>
+{% endif %}
+
+</div>
+</div>
+{% endblock content %}

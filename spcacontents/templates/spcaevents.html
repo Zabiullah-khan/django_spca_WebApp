@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class='bg-dark' style='width:100%;'>
+<h3 class='text-warning text-center'>SPCA Events Cover Page</h3>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+
+{% for i in events %}
+<a href='{% url "eventsgallery" i.pk %}'>
+<div class="col hvr">
+<div class="card hvr">
+<img src="media/{{i.coverphoto}}" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">{{i.title}}</h5>
+<p class="card-text">{{i.description}}</p>
+</div>
+</div>
+</div>
+</a>
+{% endfor %}
+</div>
+{% endblock content %}

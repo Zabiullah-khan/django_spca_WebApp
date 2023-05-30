@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class='container-fluid'> 
+<h3 style='text-align:center;' class='text-warning bg-dark'> SPCA Members Krishnagiri District Hosur</h3>
+<div class='container'>
+<table class='table'>
+<tr style='color:red;'>
+<th>Slno</th>
+<th>SPCA Memebers Krishnagiri District</th>
+<th>Village/Town/City</th>
+
+</tr>
+
+{% for i in spcamems %}
+<tr >
+<td> {{i.sl_idz}}</td>
+<td class='text-success'> {{i.spcamems}}</td>
+<td> {{i.memsloca}}</td>
+
+<tr>
+{% endfor %}
+</table>
+</div>
+</div>
+{% endblock content %}
